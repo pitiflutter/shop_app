@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                         height: 50,
                         width: 200,
                         child: TextFormField(
-                          decoration: InputDecoration(hintText: "Search here "),
+                          decoration: InputDecoration(hintText: "Search here ",border: InputBorder.none),
                         ),
                       ),
                       Spacer(),
