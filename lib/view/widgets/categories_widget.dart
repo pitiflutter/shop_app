@@ -18,7 +18,7 @@ class CategoriesWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(
-                    "images/$i.png",
+                    "assets/images/$i.png",
                     width: 40,
                   ),
                   Text(

@@ -6,13 +6,14 @@ class ItemsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.count(
+      physics: NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
-      childAspectRatio: 0.68,
+      childAspectRatio: 0.62,
       shrinkWrap: true,
       children: [
         for(int i= 1 ; i<8;i++)
         Container(
-          padding: EdgeInsets.only(left: 15, right: 15, top: 10),
+          padding: EdgeInsets.all(18),
           margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
@@ -50,7 +51,7 @@ class ItemsWidget extends StatelessWidget {
                 },
                 child: Container(
                   margin: EdgeInsets.all(10),
-                  child: Image.asset("Images/$i.png"),
+                  child: Image.asset("assets/images/$i.png"),
                 ),
               ),
               Container(
@@ -75,12 +76,9 @@ class ItemsWidget extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(top: 10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("\$55 "), Icon(Icons.shopping_bag_outlined,color:Color(0xFF4C53A5) ,)],
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [Text("\$55 "), Icon(Icons.shopping_bag_outlined,color:Color(0xFF4C53A5) ,)],
               )
             ],
           ),

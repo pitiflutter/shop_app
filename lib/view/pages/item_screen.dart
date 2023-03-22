@@ -20,7 +20,7 @@ class ItemScreen extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.all(16),
               child: Image.asset(
-                "images/1.png",
+                "assets/images/1.png",
                 height: 300,
               ),
             ),

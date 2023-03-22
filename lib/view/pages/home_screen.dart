@@ -13,6 +13,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: ListView(
+
         children: [
           HomeAppBar(),
           Container(
@@ -83,7 +84,6 @@ class HomeScreen extends StatelessWidget {
       ),
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.transparent,
-
         color: Color(0xFF4C53A5),
         items: <Widget>[
           Icon(Icons.home, size: 30,color: Colors.white,),
